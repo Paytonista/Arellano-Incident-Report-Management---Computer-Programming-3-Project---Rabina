@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEC7D25A-EDAE-4877-8157-43B05706C4AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cs311_rabina_net_framework</RootNamespace>
+    <AssemblyName>cs311_rabina_net_framework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts_form.Designer.cs">
+      <DependentUpon>Accounts_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CasesManagement_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CasesManagement_form.Designer.cs">
+      <DependentUpon>CasesManagement_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="NewCase_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCase_form.Designer.cs">
+      <DependentUpon>NewCase_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewViolation_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewViolation_form.Designer.cs">
+      <DependentUpon>NewViolation_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCase_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCase_form.Designer.cs">
+      <DependentUpon>UpdateCase_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateViolation_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateViolation_form.Designer.cs">
+      <DependentUpon>UpdateViolation_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViolationsManagement_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViolationsManagement_form.Designer.cs">
+      <DependentUpon>ViolationsManagement_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StrandsManagement_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StrandsManagement_form.Designer.cs">
+      <DependentUpon>StrandsManagement_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoursesManagement_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoursesManagement_form.Designer.cs">
+      <DependentUpon>CoursesManagement_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_form.Designer.cs">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_form.Designer.cs">
+      <DependentUpon>Main_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccount_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAccount_form.Designer.cs">
+      <DependentUpon>NewAccount_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewCourse_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCourse_form.Designer.cs">
+      <DependentUpon>NewCourse_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewStrand_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStrand_form.Designer.cs">
+      <DependentUpon>NewStrand_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewStudent_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStudent_form.Designer.cs">
+      <DependentUpon>NewStudent_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentManagement_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentManagement_form.Designer.cs">
+      <DependentUpon>StudentManagement_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAccount_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAccount_form.Designer.cs">
+      <DependentUpon>UpdateAccount_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCourse_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCourse_form.Designer.cs">
+      <DependentUpon>UpdateCourse_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStrand_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStrand_form.Designer.cs">
+      <DependentUpon>UpdateStrand_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudent_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStudent_form.Designer.cs">
+      <DependentUpon>UpdateStudent_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accounts_form.resx">
+      <DependentUpon>Accounts_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CasesManagement_form.resx">
+      <DependentUpon>CasesManagement_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCase_form.resx">
+      <DependentUpon>NewCase_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewViolation_form.resx">
+      <DependentUpon>NewViolation_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCase_form.resx">
+      <DependentUpon>UpdateCase_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateViolation_form.resx">
+      <DependentUpon>UpdateViolation_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViolationsManagement_form.resx">
+      <DependentUpon>ViolationsManagement_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StrandsManagement_form.resx">
+      <DependentUpon>StrandsManagement_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoursesManagement_form.resx">
+      <DependentUpon>CoursesManagement_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_form.resx">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_form.resx">
+      <DependentUpon>Main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccount_form.resx">
+      <DependentUpon>NewAccount_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCourse_form.resx">
+      <DependentUpon>NewCourse_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStrand_form.resx">
+      <DependentUpon>NewStrand_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStudent_form.resx">
+      <DependentUpon>NewStudent_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StudentManagement_form.resx">
+      <DependentUpon>StudentManagement_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAccount_form.resx">
+      <DependentUpon>UpdateAccount_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCourse_form.resx">
+      <DependentUpon>UpdateCourse_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStrand_form.resx">
+      <DependentUpon>UpdateStrand_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudent_form.resx">
+      <DependentUpon>UpdateStudent_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SL-120722-54440-04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4823.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tyhb_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account-img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account-img-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\122_-_3_-_Under_Maintenance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-Red-X-Button-PNG-Pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White and Blue Simple Modern Abstract  IT Communication Keynote Presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Modern Project Presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Modern Project Presentation %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Modern Project Presentation %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Modern Project Presentation %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Modern Project Presentation %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Modern Project Presentation %285%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
